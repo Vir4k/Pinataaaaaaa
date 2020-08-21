@@ -1,16 +1,7 @@
-let express = require("express"),
-    http = require('http'),
-    app = express();
+const express = require("express"),
+      app = express(),
+      port = 3000;
 
-app.use(express.static("public"));
-app.get("/", function(request, response) {
-  response.sendStatus(200); // Status: OK
-});
+app.get("/", (req, res) => res.send("I am ready."));
 
-let listener = app.listen(process.env.PORT, function() {
-  console.log("Your app is listening on port " + listener.address().port);
-});
-
-setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 280000);
+app.listen(port, () => console.log(`Your app is listening on port ${port}`));

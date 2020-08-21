@@ -4,7 +4,7 @@ const client = new tutorialBot();
 
 require("./handler/module.js")(client);
 require("./handler/Event.js")(client);
-require("./uptime.js");
+require("./uptime.js")
 
 client.package = require("./package.json");
 client.on("warn", console.warn); // This will warn you via logs if there was something wrong with your bot.

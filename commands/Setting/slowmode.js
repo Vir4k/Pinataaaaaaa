@@ -1,5 +1,6 @@
+const Discord = require("discord.js");
 const ms = require("ms");
-
+// so what am i fixing here
 exports.run = async (client, message, args) => {
   if (!message.member.permissions.any(["ADMINISTRATOR", "MANAGE_CHANNELS"])) {
     return message.channel.send("Oopsie, you don't have any rights to do this.");
