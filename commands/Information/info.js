@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
     .setTitle("<:mdHelp:568466408548335650> Information Centre")
     .setColor("RANDOM")
     .setDescription("This is a quite easy to use which contains: **Moderate** | **Information** | **Fun** & more systems.")
-    .addField("Invite", `[Click Here](https://discord.com/api/oauth2/authorize?client_id=727448017799479296&permissions=271968370&scope=bot)`, true)
+    .addField("Invite", `[Click Here](https://discord.com/oauth2/authorize?client_id=727448017799479296&scope=bot&permissions=878181502)`, true)
     .addField("Support", `[Click Here](https://discord.gg/XYbcPBr)`, true)
     .addField("Teammate", `<@725968708358373477> <@529493423556919296>`, true)
     .addField("Goal", `<:Bot_Developer_Badge:742556995323822130>`, true)

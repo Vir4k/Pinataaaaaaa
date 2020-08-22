@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports = client => {
-  console.log(`Ready as ${client.user.tag} to serve in ${client.channels.cache.size} channels on ${client.guilds.cache.size} servers, for a total of ${client.users.cache.size} users.`);
+  console.log(`Login as ${client.user.tag} to serve in ${client.channels.cache.size} channels on ${client.guilds.cache.size} servers, for a total of ${client.users.cache.size} users.`);
   function randomStatus() {
     let status = [`on ${client.guilds.cache.size} guild(s) || Type .help`, `with ${client.users.cache.size} online(s) || Type .help`] // You can change it whatever you want.
     let rstatus = Math.floor(Math.random() * status.length);
