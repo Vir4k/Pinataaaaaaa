@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
     const article = res.data;
     
     const wikipedia = new Discord.MessageEmbed()
-    .setColor(0xd15994)
+    .setColor("RANDOM")
     .setAuthor("Wikipedia", "https://i.imgur.com/a4eeEhh.png")
     .setTitle(`**${article.title}**`)
     .setURL(article.content_urls.desktop.page)

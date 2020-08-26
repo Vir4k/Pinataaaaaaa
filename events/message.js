@@ -7,7 +7,7 @@ module.exports = async (client, message) => {
   
   let prefix = client.config.prefix;
   
-  let inviteLink = ["discord.gg/", "discord.com/invite", "discordapp.com/invite"];
+  let inviteLink = ["discord.gg/", "discord.com/invite", "discordapp.com/invite", "invite.gg/invite", "discord.io/invite", "discord.me/invite"];
   
   if (inviteLink.some(word => message.content.toLowerCase().includes(word))) {
     await message.delete();
@@ -16,7 +16,7 @@ module.exports = async (client, message) => {
   }
   
     // Verification Site
-  if (message.channel.id === "746205759997476895") { // Verification Text Channel
+  if (message.channel.id === "747647762463719584") { // Verification Text Channel
     // Re-send Code System
     if (message.content.startsWith("resend")) {
       let code = db.get(`verification.${message.author.id}`);
@@ -60,7 +60,7 @@ module.exports = async (client, message) => {
 
   client.emit('experience', message);
   
-      let afk = new db.table("AFKs"),
+    let afk = new db.table("AFKs"),
       authorStatus = await afk.fetch(message.author.id),
       mentioned = message.mentions.members.first();
   
@@ -84,7 +84,6 @@ module.exports = async (client, message) => {
   }
   
   // If the user doesn't doing any to the bot, return it.
-  if (!message.content.startsWith(prefix)) return;
   
   let args = message.content.slice(prefix.length).trim().split(/ +/g);
   let msg = message.content.toLowerCase();

@@ -9,7 +9,7 @@ module.exports = async (client, member) => {
   let number = randomInteger(100000, 1000000);
   // The number will be shuffled from the range 100K - 1M
   
-  let verifyChannel = member.guild.channels.cache.find(ch => ch.id === "746205759997476895");
+  let verifyChannel = member.guild.channels.cache.find(ch => ch.id === "747647762463719584");
   // Your Verification Text Channel.
   
   await db.set(`verification.${member.user.id}`, number);
