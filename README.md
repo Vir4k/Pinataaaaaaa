@@ -28,3 +28,5 @@ Click `Show` in the header to see your app live. Updates to your code will insta
 Find out more [about Glitch](https://glitch.com/about).
 
 ( ᵔ ᴥ ᵔ )
+
+[![Run on Repl.it](https://repl.it/badge/github/Viirakk/Pinataaaaaaa)](https://repl.it/github/Viirakk/Pinataaaaaaa)
